@@ -21,25 +21,114 @@ function login(user) {
 function generateRandom() {
     let pertanyaan = [
         {
-            question: 'kantong plastik yang digunakan untuk mengumpulkan feses atau kotoran dari saluran pencernaan melalui lubang di dinding perut yang disebut stoma adalah?',
-            options: ["Asset/alkes-infrared-lamp-removebg-preview.png", "Asset/alkes-ems-removebg-preview.png", "Asset/alkes-colostomy-bag (true).png", "Asset/alkes-hearing-aid-removebg-preview.png"],
-            answer: "Asset/alkes-colostomy-bag (true).png",
+            question: 'Manakah gambar dari Colostomy Bag?',
+            options: ["Asset/Infrared.png", "Asset/Ems.png", "Asset/Colostomy.png", "Asset/alkes-hearing-aid-removebg-preview.png"],
+            answer: "Asset/Colosotmy.png",
             type: 'gambar'
         },
-        // {
-        //     question: 'Transcutaneous electrical nerve stimulation (TENS) adalah perangkat yang mengirimkan arus listrik kecil ke bagian tubuh yang ditargetkan. Arus ini digunakan untuk menghilangkan rasa sakit adalah?',
-        //     options: ["Asset/alkes-infrared-lamp-removebg-preview.png", "Asset/alkes-infrared-lamp-removebg-preview.png", "Asset/alkes-infrared-lamp-removebg-preview.png", "Asset/alkes-hearing-aid-removebg-preview.png"],
-        //     answer: 'ems',
-        //     type: 'gambar'
-        // },
+        {
+            question: "Manakah yang berupa Tensimeter",
+            options: ["Asset/Ems.png", "Asset/tensimeter.png", "Asset/Infrared.png", "Asset/nebulizer.png"],
+            answer: "Asset/tensimeter.png",
+            type: 'gambar'
+        },
+        {
+            question: "Manakah gambar dari Nebulizer?",
+            options: ["Asset/Infrared.png", "Asset/fataldoppler.png", "Asset/nebulizer.png", "Asset/Autoclave.png"],
+            answer: "Asset/nebulizer.png",
+            type: 'gambar'
+        },
+        {
+            question: "Manakah gambar dari Infrared?",
+            options: ["Asset/Infrared.png", "Asset/fataldoppler.png", "Asset/HeatingPad.png", "Asset/Autoclave.png"],
+            answer: "Asset/Infrared.png",
+            type: 'gambar'
+        },
+        {
+            question: "Manakah gambar dari Heating Pad?",
+            options: ["Asset/HeatingPad.png", "Asset/Autoclave.png", "Asset/Selangkanula.png", "Asset/PenunjangOrtopedi.png"],
+            answer: "Asset/HeatingPad.png",
+            type: 'gambar'
+        },
+        {
+            question: "Manakah gambar dari Co Analyzer?",
+            options: ["Asset/Infrared.png", "Asset/CoAnalyzer.png", "Asset/HeatingPad.png", "Asset/InfusionPump.png"],
+            answer: "Asset/CoAnalyzer.png",
+            type: 'gambar'
+        },
+        {
+            question: "Manakah gambar dari Autoclave?",
+            options: ["Asset/ClinicalCentrifuge.png", "Asset/fataldoppler.png", "Asset/HeatingPad.png", "Asset/Autoclave.png"],
+            answer: "Asset/Autoclave.png",
+            type: 'gambar'
+        },
+        {
+            question: "Nasal Cannula merupakan aksesoris tambahan yang digunakan untuk pasien yang memerlukan oksigen konsentrasi sedang, yang manakah alat tersebut?",
+            options: ["Asset/tensimeter.png", "Asset/SelangKanula.png", "Asset/Infrared.png", "Asset/Autoclave.png"],
+            answer: "Asset/SelangKanula.png",
+            type: 'gambar'
+        },
         {
             question: 'Alat yang digunakan untuk sterilisasi ruangan di rumah sakit dengan menggunakan sinar UVC LED yang dapat membunuh kuman sebesar 99,99 % adalah?',
             options: ['lampu-uv', 'centrifuge', 'nebulizer', 'ventilator'],
             answer: 'lampu-uv',
+            type: 'string',
+        },
+    
+        {
+            question: 'Jadi pasien lupa dengan kejadian yang dialaminya sebelum kecelakaan terjadi, maka bisa disebut itu jenis amnesia ?',
+            options: ['amnesia sementara', 'amensia permanen', 'amensia retrograde', 'amnesia otak'],
+            answer: 'amensia retrograde',
+            type: 'string',
+        },
+    
+        {
+            question: 'Alat yang dapat membantu meredakan sakit dan nyeri, serta mengurangi kekakuan pada otot dan persendian adalah?',
+            options: ['Tensimeter', 'Headting Pad', 'CO Analyzer', 'Fatal Doppler'],
+            answer: 'Headting Pad',
+            type: 'string',
+        },
+    
+        {
+            question: 'Perangkat skrining karbon monoksida untuk membantu setiap orang yang ingin mengetahui seberapa banyak tingkat CO ada di tubuh mereka atau di lingkungan mereka yang dapat membahayakan kehidupan apalah?',
+            options: ['Heating Pas', 'Infusion Pump', 'Nebuzilae', 'CO Analyzer'],
+            answer: 'CO Analyzer',
+            type: 'string',
+        },
+    
+        {
+            question: 'Alat yang juga dikenal sebagai sterilisasi uap, dan merupakan alat yang digunakan untuk sterilisasi alat/benda pada penerapan dalam bidang kesehatan atau industry adalah ?',
+            options: ['Clinical Centrifuge', 'Autoclave', 'Selang Kanula', 'Tesimeter'],
+            answer: 'Autoclave',
+            type: 'string',
+        },
+    
+        {
+            question: 'Alat tes yang menggunakan gelombang suara untuk memeriksa detak jantung janin adalah?',
+            options: ['Fatal Doppler', 'Autoclave', 'Infusion Pump', 'Nebulize'],
+            answer: 'Fatal Doppler',
+            type: 'string',
+        },
+    
+        {
+            question: 'Alat yang membantu seseorang menghirup obat dalam bentuk uap atau aerosol melalui masker atau corong (mouthpiece) adalah? ',
+            options: ['Nebulizer', 'Tensimeter', 'Fatal Doppler', 'Selang Kanula'],
+            answer: 'Nebulizer',
+            type: 'string',
+        },
+        {
+            question: "Perangkat medis yang dirancang untuk mengatasi masalah muskuloskeletal, support ortopedi dapat digunakan untuk menyelaraskan, memperbaiki posisi, menopang, menstabilkan, dan melindungi bagian tubuh tertentu (terutama otot, sendi, dan tulang) saat mereka sembuh dari cedera atau trauma adalah?",
+            options: ["Tensimeter", "Penunjang Ortopedi", "Clinical Centrifuge", "Autoclave"],
+            answer: "Penunjang Ortopedi",
             type: 'string'
-        }
-
-    ]
+        },
+        {
+            question: "Alat yang dapat membantu meredakan sakit dan nyeri, serta mengurangi kekakuan pada otot dan persendian adalah?",
+            options: ["Tensimeter", "Heating Pad", "Autoclave", "Co Analyzer"],
+            answer: "Heating Pad",
+            type: 'string'
+        },
+    ];
     let random = Math.floor(Math.random() * pertanyaan.length)
 
     return pertanyaan[random]
